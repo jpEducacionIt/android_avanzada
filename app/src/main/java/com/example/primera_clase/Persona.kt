@@ -9,4 +9,5 @@ abstract class Persona(
     abstract fun checkEdad(): String
     abstract fun obtenerApodo(): String
     abstract fun deportePreferido(): String
+    abstract fun listarDeportes()
 }

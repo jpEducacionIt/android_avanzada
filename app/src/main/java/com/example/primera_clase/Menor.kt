@@ -37,6 +37,13 @@ class Menor(
         return deportes?.firstOrNull()?.showDeporte().toString()
     }
 
+    override fun listarDeportes() {
+        deportes?.forEach { Deportes ->
+            println(Deportes.showDeporte())
+            println("Yo Juego $Deportes")
+        }
+    }
+
     override fun clasePreferida(): String {
         return "Mi clase preferida es $clasePreferida"
     }

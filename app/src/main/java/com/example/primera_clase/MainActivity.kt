@@ -3,6 +3,7 @@ package com.example.primera_clase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,14 +29,23 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun ingresarValores() {
-        val persona_menor: Menor = Menor("Martin", 32, "Historia", arrayListOf(Deportes.Volley, Deportes.Rugby))
+        val personaMenor: Menor = Menor("Martin", 32, "Historia", arrayListOf(Deportes.Volley, Deportes.Rugby))
+        personaMenor.listarDeportes()
 
         textViewTitulo.text = TITULO_APP
-        textViewText.text = persona_menor.crearSaludo()
-        textViewFichar.text = persona_menor.checkEdad()
-        textViewNumeroAlto.text = persona_menor.clasePreferida()
-        textViewSaludar.text = persona_menor.obtenerApodo()
-        textViewDeporte.text = persona_menor.deportePreferido()
+        textViewText.text = personaMenor.crearSaludo()
+        textViewFichar.text = personaMenor.checkEdad()
+        textViewNumeroAlto.text = personaMenor.clasePreferida()
+        textViewSaludar.text = personaMenor.obtenerApodo()
+        textViewDeporte.text = personaMenor.deportePreferido()
+
+        //data class
+        val miPerro = Mascota("Perro", "Pichi", 8)
+        miPerro.comida = "Kongo"
+        Toast.makeText(this, miPerro.toString(), Toast.LENGTH_SHORT).show()
+        val miGato = Mascota("Gato", "Rocio", 5)
+        println(miGato)
+        if (miPerro.equals(miGato)) { println("Iguales") } else { println("Distintos") }
     }
 
     companion object {
