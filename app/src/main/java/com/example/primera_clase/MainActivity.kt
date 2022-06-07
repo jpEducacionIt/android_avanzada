@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
         val gente = GenteGetySet()
         gente.nombre = "Pepe"
         println(gente.nombre)
+        gente.getNombre()
 
         //data class
         val miPerro = Mascota("Perro", "Pichi", 8)
