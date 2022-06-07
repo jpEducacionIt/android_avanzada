@@ -55,4 +55,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewSaludar" />
+
+    <TextView
+        android:id="@+id/textViewDeporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Deporte"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumeroAlto" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
