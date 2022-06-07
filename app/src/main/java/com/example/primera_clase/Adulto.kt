@@ -37,6 +37,12 @@ class Adulto(
         return deportes?.firstOrNull()?.showDeporte().toString()
     }
 
+    override fun listarDeportes() {
+        deportes?.forEach {
+            println(it.showDeporte())
+        }
+    }
+
     override fun obtenerNumero(): String {
         var numeroAlto : Int = 0
         for (numbers in numeros) {
