@@ -39,6 +39,11 @@ class MainActivity : AppCompatActivity() {
         textViewSaludar.text = personaMenor.obtenerApodo()
         textViewDeporte.text = personaMenor.deportePreferido()
 
+        //get y set
+        val gente = GenteGetySet()
+        gente.nombre = "Pepe"
+        println(gente.nombre)
+
         //data class
         val miPerro = Mascota("Perro", "Pichi", 8)
         miPerro.comida = "Kongo"
